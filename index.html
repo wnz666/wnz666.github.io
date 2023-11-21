@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nz666的网站</title>
+    <style>
+      * {
+        border: 1px solid;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+        /*背景图片URL*/
+        /* background-image: url(https: // c.runoob.com/wp-content/uploads/2017/01/btotbhpudiagtmvlkyrs.jpg),
+          url();*/
+        /*背景图片位置*/
+        background-position: right bottom, left top;
+        background-repeat: no-repeat;
+      }
+
+      .flex {
+        display: flex;
+      }
+      .baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(196, 189, 189);
+        font-size: 14px;
+        color: #666;
+      }
+      .w50 {
+        width: 50px;
+      }
+      .h50 {
+        height: 50px;
+      }
+      .gundong {
+        overflow: auto;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .hx {
+          flex-direction: column;
+        }
+        .sx {
+          flex-direction: column;
+        }
+      }
+      .biaoti {
+        font-size: 30px;
+        -ms-flex-item-align: center;
+      }
+      .xbiaoti {
+        font-weight: bold;
+        margin-top: 10px;
+        border-bottom: 2px darkgrey solid;
+      }
+      .zscolor {
+        color: rgb(5, 109, 36);
+      }
+      .jvzhong {
+        align-items: center;
+        justify-content: center;
+      }
+      .dazi {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      .andx {
+        width: 60px;
+        height: 40px;
+        border: 1px solid rgb(16, 228, 33);
+        background-color: rgb(255, 255, 255);
+        transition: all 0.2s;
+      }
+      .andx:hover {
+        width: 60px;
+        height: 40px;
+        background-color: rgb(16, 228, 33);
+        transition: all 0.5s;
+        color: rgb(0, 0, 0);
+      }
+      .xuantinggb:hover {
+        background-color: red;
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        color: #fff;
+        font-weight: 600;
+        transition: all 2s;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      .xuantinggb {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        transition: all 2s;
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      .anzhugb:active {
+        background-color: red;
+        border-radius: 5px;
+        height: 50px;
+        width: 100%;
+        color: #fff;
+        font-weight: 600;
+        transition: all 2s;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      .anzhugb {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        transition: all 2s;
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      .dianjigb {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        transition: all 2s;
+        color: #fff;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+      }
+      input {
+        width: auto;
+        height: 30px;
+      }
+      input::placeholder {
+        color: black;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 200px; z-index: 1" class="baise yinying flex column">
+      <!--头像区-->
+      <div
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex column"
+      >
+        <img
+          alt="wnz"
+          src="https://tse1-mm.cn.bing.net/th/id/OIP-C.tC2RWC0w_8v5JxNjdSrJ4AHaHa?pid=ImgDet&rs=1"
+          style="width: 60px; height: 60px"
+        />
+        <div class="mg8">派蒙</div>
+      </div>
+      <!--导航区-->
+      <div class="flex column">
+        <div class="daohang">
+          <a href="http://www.baidu.com">百度</a>
+        </div>
+        <div class="daohang"><a href="#dzan">点赞按钮</a></div>
+        <div class="daohang"><a hreg="">导航</a></div>
+        <div class="daohang"><a hreg="">导航</a></div>
+        <div class="daohang"><a hreg="">导航</a></div>
+        <div class="daohang"><a hreg="">导航</a></div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div
+        style="height: 60px; z-index: 1; background-color: rgb(255, 255, 255)"
+        class="baise yinying"
+      ></div>
+      <!--内容区-->
+      <div class="flex1 flex" style="overflow: auto">
+        <!--左区-->
+        <div style="flex: 3; overflow: auto" class="flex column mg8">
+          <!--数据区-->
+          <div class="flex">
+            <!--数据块-->
+            <div style="height: 100px" class="flex1 baise yinying mgr8"></div>
+            <div style="height: 100px" class="flex1 baise yinying mgr8"></div>
+            <div style="height: 100px" class="flex1 baise yinying mgr8"></div>
+            <div style="height: 100px" class="flex1 baise yinying"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex1 flex column">
+            <!--基础训练-->
+            <div class="biaoti baise yinying mgt8">基础训练</div>
+            <!--点赞按钮-->
+            <div class="baise yinying mgt8">
+              <div class="flex column">
+                <div id="dzan" class="xbiaoti">点赞按钮</div>
+                <button id="dzs" onclick="dianzan()" type="button" class="andx">
+                  0
+                </button>
+              </div>
+              <script>
+                function dianzan() {
+                  let dianzanshuBQ = window.document.getElementById("dzs");
+                  let dianzanshu = parseInt(dianzanshuBQ.innerText);
+                  let xindianzanshu = dianzanshu + 1;
+                  dianzanshuBQ.innerText = xindianzanshu;
+                  return;
+                }
+              </script>
+            </div>
+            <!--输出文本-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">输出文本;不同文本之间用加号连接</div>
+              <script>
+                window.document.write(
+                  "window.document.write(&quotText&quot+let定义的)"
+                );
+              </script>
+            </div>
+            <!--替换文本-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">替换文本</div>
+              <div>
+                <div id="thwb">被替换</div>
+                <script>
+                  window.document.getElementById("thwb").innerHTML =
+                    "window.document.getElementById(&quotid&quot)=&quotText&quot";
+                </script>
+              </div>
+            </div>
+
+            <!--点击替换-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">点击替换</div>
+              <div class="flex">
+                <!--按钮-->
+                <button onclick="dianjitihuan()" class="andx">点击</button>
+                <div class="flex">
+                  <div id="djth" style="flex-wrap: nowrap" class="flex flex1">
+                    这是要替换的文本
+                  </div>
+                  <script>
+                    //创建函数：
+                    function dianjitihuan() {
+                      //innerHTMlL:内部文本
+                      window.document.getElementById("djth").innerHTML =
+                        "替换完成了！";
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <!--单行注释-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">单行注释__可用单行注释防止命令执行</div>
+              <div class="zscolor">//text</div>
+            </div>
+            <!--多行注释-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">多行注释__可用多行注释防止多行命令执行</div>
+              <div class="zscolor">/*<br />text<br />text<br />*/</div>
+            </div>
+            <!--定义一个变量-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                声明一个变量，为它赋值，然后显示出来<br />在一条语句中声明很多变量,中间用逗号隔开
+              </div>
+              <div>
+                <script>
+                  //定义方法
+                  let shuzi = 5;
+                  let lshuzi = 6;
+                  let jia = shuzi + lshuzi;
+                  document.write(jia);
+                  document.write("___let 定义");
+                </script>
+                <br />如 let diyi,dier,disan;
+              </div>
+            </div>
+            <!--条件语句 -->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">条件语句 if/else_且:&&,或:||</div>
+              <div class="flex">
+                <!--点击-->
+                <button onclick="ifyvjv()" class="andx baise">点击问好</button>
+                <div id="ifyj" class="flex jvzhong dazi"></div>
+                <script>
+                  function ifyvjv() {
+                    let wenhao = "上午好";
+                    let time = new Date().getHours();
+                    //if 条件语句用法
+                    if (time >= 12 && time <= 14) {
+                      wenhao = "中午好";
+                    } else if (time > 14 && time < 20) {
+                      wenhao = "下午好";
+                    } else if (time >= 20) {
+                      wenhao = "晚上好";
+                    }
+                    document.getElementById("ifyj").innerHTML = wenhao;
+                  }
+                </script>
+              </div>
+            </div>
+            <!--条件语句_switch_case-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                条件语句_switch(i){<br />case 0:x="0";brerk;<br />case
+                1:x="1";break;<br />default:"无效"}
+              </div>
+              <div class="flex">
+                <button onclick="xianshixingqi()" class="andx">
+                  点击显示星期
+                </button>
+                <div class="dazi jvzhong flex" id="xingqi"></div>
+                <script>
+                  function xianshixingqi() {
+                    let xingqiji = new Date().getDay();
+                    let x;
+                    switch (xingqiji) {
+                      case 0:
+                        x = "天";
+                        break;
+                      case 1:
+                        x = "一";
+                        break;
+                      case 2:
+                        x = "二";
+                        break;
+                      case 3:
+                        x = "三";
+                        break;
+                      case 4:
+                        x = "四";
+                        break;
+                      case 5:
+                        x = "五";
+                        break;
+                      case 6:
+                        x = "六";
+                        break;
+                      default:
+                        "无效";
+                    }
+                    window.document.getElementById("xingqi").innerHTML =
+                      "今天是星期" + x;
+                  }
+                </script>
+              </div>
+            </div>
+            <!--显示警告框-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">显示警告框_alert("")_换行:\n</div>
+              <div class="flex">
+                <button onclick="xianshijinggaolan()" class="andx">
+                  显示警告框
+                </button>
+                <script>
+                  function xianshijinggaolan() {
+                    alert("警告栏!\n换行也行");
+                  }
+                </script>
+              </div>
+            </div>
+            <!--确认框-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                确认框_confirm("")_确认返回 true,取消返回 false
+              </div>
+              <div class="flex">
+                <button onclick="querenkuang()" class="andx">点击</button>
+                <div id="qrk"></div>
+                <script>
+                  function querenkuang() {
+                    if (confirm("点击确认") == true) {
+                      document.getElementById("qrk").innerHTML = "执行确认操作";
+                    } else {
+                      document.getElementById("qrk").innerHTML = "执行取消操作";
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+            <!--提示框-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                提示框_prompt("","")_确认_返回输入的值,取消_返回null
+              </div>
+              <div class="flex">
+                <button onclick="tishikuang()" class="andx">点击输入</button>
+                <div id="tsk"></div>
+                <script>
+                  function tishikuang() {
+                    let mingzi = prompt("请输入名字", "张三");
+                    let x;
+                    if (mingzi != null && mingzi != "") {
+                      x = "我知道是你" + mingzi;
+                    } else {
+                      x = "干嘛不输入";
+                    }
+                    document.getElementById("tsk").innerHTML = x;
+                  }
+                </script>
+              </div>
+            </div>
+            <!--带有参数的函数-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">带有参数的函数</div>
+              <div class="flex">
+                <button onclick="canshuhanshu('早上好')" class="andx">
+                  早上好
+                </button>
+                <button onclick="canshuhanshu('晚上好')" class="andx">
+                  晚上好
+                </button>
+                <script>
+                  function canshuhanshu(txt) {
+                    alert(txt);
+                  }
+                </script>
+              </div>
+            </div>
+            <!--for循环-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                for循环:for(i=0;i&lt5;i++){}<br />while循环:while(i&lt5){}<br />do
+                while循环:do{} while();<br />跳过循环:continue<br />离开循环:break
+              </div>
+              <div class="flex">
+                <button onclick="forxunhuan()" class="andx">点击</button>
+                <div id="fxh"></div>
+                <script>
+                  function forxunhuan() {
+                    let x = "",
+                      i;
+
+                    for (i = 0; i < 10; i++) {
+                      x = x + i;
+                      if (i == 4) {
+                        x = x + "<br>";
+                      }
+                    }
+
+                    document.getElementById("fxh").innerHTML = x;
+                  }
+                </script>
+              </div>
+            </div>
+            <!--for循环输出不同格式内容-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">for循环输出不同格式内容</div>
+              <div class="flex">
+                <button onclick="forxunhuanbt()" class="andx">点击</button>
+                <div id="fxhbt" class="flex jvzhong" style="height: 40px"></div>
+                <script>
+                  function forxunhuanbt() {
+                    let x = "",
+                      i;
+                    for (i = 3; i < 6; i++) {
+                      x =
+                        x +
+                        "<h" +
+                        i +
+                        ">" +
+                        (i - 2) +
+                        "</h" +
+                        i +
+                        ">" +
+                        "&nbsp" +
+                        "&nbsp" +
+                        "&nbsp" +
+                        "&nbsp" +
+                        "&nbsp";
+                    }
+                    document.getElementById("fxhbt").innerHTML = x;
+                  }
+                </script>
+              </div>
+            </div>
+            <!--for_in-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">for.in语句:for(let in object){}</div>
+              <div></div>
+            </div>
+            <!--操作时改变样式-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                操作时改变样式{<br />一、悬停:hover<br />二、按住:active<br />三、连接访问前:link<br />四、连接访问后visited}
+              </div>
+              <div class="xuantinggb">悬停</div>
+              <div class="anzhugb">按住</div>
+              <div id="zans" class="dianjigb" onclick="gaibianxingzhuang()">
+                点击
+              </div>
+              <script>
+                let gban = false;
+                function gaibianxingzhuang() {
+                  if (gban) {
+                    gban = false;
+                    document.getElementById("zans").style.width = "50px";
+                    document.getElementById("zans").innerText = "结束";
+                  } else {
+                    gban = true;
+                    document.getElementById("zans").style.width = "100%";
+                    document.getElementById("zans").innerText = "加载";
+                  }
+                }
+              </script>
+            </div>
+            <!--输入框-->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti">
+                输入框:可保存<br />placeholder:输入值覆盖原来值<br />value输入值不覆盖原来值
+              </div>
+              <div class="flex">
+                <input onclick="shurukuang()" id="srk" placeholder="请输入" />
+                <div class="flex jvzhong">
+                  <button
+                    id="sran"
+                    onclick="shuruannui()"
+                    style="width: 30px; height: 30px; background-color: #fff"
+                  >
+                    ✔
+                  </button>
+                  <script>
+                    let an2 = false;
+                    function shuruannui() {
+                      let sran = document.getElementById("sran");
+                      let srk = document.getElementById("srk");
+                      if (an2) {
+                        an2 = false;
+                        sran.innerText = "✔";
+                        srk.readOnly = false;
+                        window.localStorage.removeItem("suibian");
+                      } else {
+                        an2 = true;
+                        sran.innerText = "✘";
+                        srk.readOnly = true;
+                        window.localStorage.setItem("suibian", srk.value);
+                      }
+                    }
+                    let data = window.localStorage.getItem("suibian");
+
+                    if (data) {
+                      document.getElementById("srk").value = data;
+                      shuruannui();
+                    }
+                  </script>
+                </div>
+              </div>
+            </div>
+            <!---->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti"></div>
+              <div></div>
+            </div>
+            <!---->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti"></div>
+              <div></div>
+            </div>
+            <!---->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti"></div>
+              <div></div>
+            </div>
+            <!---->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti"></div>
+              <div></div>
+            </div>
+            <!---->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti"></div>
+              <div></div>
+            </div>
+            <!---->
+            <div class="baise yinying mgt8">
+              <div class="xbiaoti"></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <!--右区-->
+        <div class="flex1 flex column mgr8 mgt8">
+          <!--提示区-->
+          <div style="height: 150px" class="baise yinying"></div>
+          <!--消息去-->
+          <div style="height: 300px" class="baise yinying mgt8"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
